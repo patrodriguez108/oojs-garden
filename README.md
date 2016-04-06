@@ -1,4 +1,4 @@
-# OOJS - Garden Challenge
+# OOJS: A Garden with Flowers
 
 # Objectives
 
