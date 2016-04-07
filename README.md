@@ -7,7 +7,7 @@ We're going to build some JavaScript objects:  a garden object with a collection
 ### JavaScript Objects
 We're going to build objects using two approaches:  through object literal syntax and through a constructor function.  These are two approaches that ultimately do the same thing:  create objects with attributes and behaviors.
 
-***Object literal syntax***.  When we only need one instance of an object, it's convenient to use object literal syntax to create that object.  We "literally" write the object that we want, declaring the object's properties and their values.  The syntax might feel similar to writing a Ruby hash object, but there's no real equivalent for creating objects this way in Ruby.  In Figure 1 we create a person with first and last names and the behavior to combine them into a full name.
+***Object literal syntax***.  When we only need one instance of an object, it's convenient to use [object literal syntax] to create that object.  We "literally" write the object that we want, declaring the object's properties and their values.  The syntax might feel similar to writing a Ruby hash object, but there's no real equivalent for creating objects this way in Ruby.  In Figure 1 we create a person with first and last names and the behavior to combine them into a full name.
 
 ```js
 var person = {
@@ -96,6 +96,8 @@ You will be creating BOTH an Object Literal and a Constructor Function, then add
 
 - For a successful solution, you'll need both "object literals" and objects created with a "constructor" and "prototype".
 - You can work in Sublime Text 2, then cut-and-paste your code into the Chrome JavaScript console for testing. If `node` is installed, you can run your JS source file from the terminal by typing `node garden.js`.
+
 [jasmine]: http://jasmine.github.io/2.4/introduction.html
+[object literal syntax]: http://www.dyn-web.com/tutorials/object-literal/
 [orange tree challenge]: ../../../../orange-tree-1-just-oranges-challenge
 
