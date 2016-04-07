@@ -83,14 +83,17 @@ describe("a string with my name", function() {
 *Figure 4.* Testing the value of a JavaScript string object with Jasmine.
 
 
+## Releases
+### Pre-release:  Review and Run the Tests
+We have a test suite that will guide us as we develop our garden and flower objects; the test files are located in the `spec/` folder.  To run the tests, we open the `SpecRunner.html` file in the browser.  Open the spec runner.  The garden tests are all failing and the flower tests are pending.  As we write the code to create our objects, we'll rerun the tests by refreshing the spec runner.
 
-# Objectives
 
-For this challenge, your task is to implement JavaScript code that will make the provided driver code run without errors or output. **You should NOT need to change the driver code to make things work.**
+### Release 0: The Garden
+Begin by creating the garden object.  In the file `src/garden.js` we have a variable `garden` whose value is an object literal with no properties.  Use the tests to guide adding the desired properties to the garden.  Some of the properties will be attributes like name and location.  Other properties will be behaviors like planting flowers.
 
-You will be creating BOTH an Object Literal and a Constructor Function, then adding methods to the Constructor Function's prototype during this challenge. If you have no idea what any of the above terms refer to - stop here. Be sure to do the Intro to OOJS reading, then return to this challenge.
 
-**Be sure to use the comments at the top of the `garden.js` file and the driver code to help guide you when deciding what types of objects to create. **
+
+
 
 # Useful Notes / Tidbits
 
