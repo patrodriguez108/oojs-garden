@@ -60,7 +60,7 @@ But there are definitely differences as well.  For example, Jasmine provides a d
 describe "a string with my name" do
   let(:my_name) { "Carson Hollands" }
   
-  it("is my name") do
+  it "is my name" do
   	expect(my_name).to eq "Carson Hollands"
   end
 end
