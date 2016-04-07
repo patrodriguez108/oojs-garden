@@ -98,13 +98,6 @@ Our flower objects are simple.  Each flower has two attributes:  name and color.
 The tests for flowers have not been written.  Write tests that demonstrate that our constructor function produces objects with the correct names and colors.  Then, update the `Flower()` constructor function to pass the tests.
 
 
-
-
-# Useful Notes / Tidbits
-
-- For a successful solution, you'll need both "object literals" and objects created with a "constructor" and "prototype".
-- You can work in Sublime Text 2, then cut-and-paste your code into the Chrome JavaScript console for testing. If `node` is installed, you can run your JS source file from the terminal by typing `node garden.js`.
-
 [jasmine]: http://jasmine.github.io/2.4/introduction.html
 [object literal syntax]: http://www.dyn-web.com/tutorials/object-literal/
 [orange tree challenge]: ../../../../orange-tree-1-just-oranges-challenge
