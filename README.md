@@ -98,7 +98,12 @@ Our flower objects are simple.  Each flower has two attributes:  name and color.
 The tests for flowers have not been written.  Write tests that demonstrate that our constructor function produces objects with the correct names and colors.  Then, update the `Flower()` constructor function to pass the tests.
 
 
+## Conclusion
+We can take an [object-oriented approach][] to writing JavaScript: creating objects with attributes and behaviors, sharing behaviors among objects. etc.  We just need to learn how to implement these in JavaScript.
+
+
 [jasmine]: http://jasmine.github.io/2.4/introduction.html
 [object literal syntax]: http://www.dyn-web.com/tutorials/object-literal/
+[object-oriented approach]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 [orange tree challenge]: ../../../../orange-tree-1-just-oranges-challenge
 
