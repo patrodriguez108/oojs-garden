@@ -1,5 +1,5 @@
 describe("a flower", function() {
-  var flower
+  var flower;
 
   beforeEach(function() {
     flower = new Flower("daffodil", "yellow");

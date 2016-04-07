@@ -13,32 +13,33 @@ describe("the garden object", function() {
     });
 
     describe("adding and removing flowers", function() {
-      afterEach(function() {
-        garden.flowers = [];
-      });
-
       var daffodil = { name: "daffodil", color: "yellow" };
       var iris     = { name: "iris", color: "purple" }
       var aster    = { name: "aster", color: "red" }
 
-      it("can add a flower to its flowers", function() {
-        garden.flowers = [];
+      beforeEach(function() {
+        garden.flowers = [daffodil];
+      });
 
-        garden.addFlower(daffodil);
+      afterAll(function() {
+        garden.flowers = [];
+      });
+
+
+      it("can add a flower to its flowers", function() {
         expect(garden.flowers).toEqual([daffodil]);
+        garden.addFlower(iris);
+        expect(garden.flowers).toEqual([daffodil, iris]);
       });
 
       it("can plant multiple flowers", function() {
-        garden.flowers = [aster];
-        flowersToPlant = [daffodil, iris]
-
-        garden.plant(flowersToPlant);
-        expect(garden.flowers).toHaveSameElementsAs([aster, daffodil, iris])
+        expect(garden.flowers).toEqual([daffodil]);
+        garden.plant([iris, aster]);
+        expect(garden.flowers).toHaveSameElementsAs([daffodil, iris, aster]);
       });
 
       it("can remove a flower", function() {
-        garden.flowers = [daffodil];
-
+        expect(garden.flowers).toEqual([daffodil]);
         garden.remove(daffodil);
         expect(garden.flowers).toEqual([]);
       });
