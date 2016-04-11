@@ -93,7 +93,7 @@ Our flower objects are simple.  Each flower has two attributes:  name and color.
 
 The tests for flowers have not been written.  Write tests that demonstrate that our constructor function produces objects with the correct names and colors.  Then, update the `Flower()` constructor function to pass the tests.
 
-*Note:*  We need to write Jasmine tests.  Follow the examples in Figure 4 and/or the file `spec/station_spec.js`.
+*Note:*  Follow the example in Figure 4 to write the Jasmine tests.
 
 
 ### Release 1: The Garden
