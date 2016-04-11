@@ -13,9 +13,9 @@ describe("the garden object", function() {
     });
 
     describe("adding and removing flowers", function() {
-      var daffodil = { name: "daffodil", color: "yellow" };
-      var iris     = { name: "iris", color: "purple" }
-      var aster    = { name: "aster", color: "red" }
+      var daffodil = new Flower("daffodil", "yellow");
+      var iris     = new Flower("iris", "purple");
+      var aster    = new Flower("aster", "red");
 
       beforeEach(function() {
         garden.flowers = [daffodil];
@@ -47,20 +47,20 @@ describe("the garden object", function() {
 
     describe("filtering its flowers", function() {
       it("filters flowers by color", function() {
-        var yellowFlower1 = { color: "yellow" };
-        var yellowFlower2 = { color: "yellow" };
-        var redFlower1    = { color: "red" };
+        var yellowFlower1 = new Flower("daffodil", "yellow")
+        var yellowFlower2 = new Flower("buttercup", "yellow")
+        var redFlower1    = new Flower("aster", "red")
 
         garden.flowers = [yellowFlower1, redFlower1, yellowFlower2];
         expect(garden.flowersByColor("yellow")).toHaveSameElementsAs([yellowFlower1, yellowFlower2]);
       });
 
       it("filters flowers by name", function() {
-        var iris1  = { name: "iris" };
-        var iris2  = { name: "iris" };
-        var aster1 = { name: "aster" };
+        var iris1  = new Flower("iris", "purple");
+        var iris2  = new Flower("iris", "purple");
+        var lavender1 = new Flower("lavender", "purple");
 
-        garden.flowers = [aster1, iris1, iris2];
+        garden.flowers = [lavender1, iris1, iris2];
         expect(garden.flowersByName("iris")).toHaveSameElementsAs([iris1, iris2]);
       });
     });
