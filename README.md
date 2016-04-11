@@ -88,14 +88,14 @@ describe("a string with my name", function() {
 We have a test suite that will guide us as we develop our garden and flower objects; the test files are located in the `spec/` folder.  To run the tests, we open the `SpecRunner.html` file in the browser.  Open the spec runner.  The garden tests are all failing and the flower tests are pending.  As we write the code to create our objects, we'll rerun the tests by refreshing the spec runner.
 
 
-### Release 0: The Garden
-Begin by creating the garden object.  In the file `src/garden.js` we have a variable `garden` whose value is an object literal with no properties.  Use the tests to guide adding the desired properties to the garden.  Some of the properties will be attributes like name and location.  Other properties will be behaviors like planting flowers.
-
-
-### Release 1: The Flowers
+### Release 0: The Flowers
 Our flower objects are simple.  Each flower has two attributes:  name and color.  We're going to instantiate flowers using a `Flower()` constructor function, which has been defined in the file `src/flower.js`.
 
 The tests for flowers have not been written.  Write tests that demonstrate that our constructor function produces objects with the correct names and colors.  Then, update the `Flower()` constructor function to pass the tests.
+
+
+### Release 1: The Garden
+Begin by creating the garden object.  In the file `src/garden.js` we have a variable `garden` whose value is an object literal with no properties.  Use the tests to guide adding the desired properties to the garden.  Some of the properties will be attributes like name and location.  Other properties will be behaviors like planting flowers.
 
 
 ## Conclusion
