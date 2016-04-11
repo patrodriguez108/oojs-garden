@@ -26,7 +26,7 @@ person.fullName();
 *Figure 1*. Using object literal syntax to represent a person as a JavaScript object.
 
 
-***Constructor functions***.  If we find ourselves needing to create multiple instances of the same type of object, we can write a constructor function.  This is similar to how we create objects in Ruby (i.e., defining a class with an initialize method that sets up objects).  Using a constructor function also allows us to share properties and behaviors among objects through the constructor's prototype—like instance methods declared in a Ruby class that are shared among instances of that class.  
+***Constructor functions***.  If we find ourselves needing to create multiple objects with the same behaviors and properties, we can write a constructor function. Constructor functions serve as *factories* that produce objects following a template.  This is similar to how we create objects in Ruby (i.e., defining a class with an initialize method that sets up objects).  Using a constructor function also allows us to share properties and behaviors among objects through the constructor's prototype—like instance methods declared in a Ruby class that are shared among instances of that class.  
 
 In Figure 2, we use a constructor function to create two person objects with the same attributes and behaviors as the lone person object created in Figure 1.  The `Person()` constructor function sets the attributes that are unique to each instance:  the first and last names.  The full name behavior is shared by the person objects through the `Person.prototype` object.
 
