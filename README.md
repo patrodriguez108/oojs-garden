@@ -107,5 +107,5 @@ We can take an [object-oriented approach][] to writing JavaScript: creating obje
 [jasmine]: http://jasmine.github.io/2.4/introduction.html
 [object literal syntax]: http://www.dyn-web.com/tutorials/object-literal/
 [object-oriented approach]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
-[orange tree challenge]: ../../../../orange-tree-1-just-oranges-challenge
+[orange tree challenge]: ../../../orange-tree-1-just-oranges-challenge
 
