@@ -20,5 +20,14 @@ var garden = {
 			};
 		};
 		return flowers
+	},
+	flowersByName(name) {
+		var flowers = [];
+		for (var i = 0; i < this.flowers.length; i++) {
+			if (this.flowers[i].name === name) {
+				flowers.push(this.flowers[i]);
+			};
+		};
+		return flowers
 	}
 };
