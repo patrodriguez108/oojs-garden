@@ -6,6 +6,6 @@ matching the description in spec/flower_spec.js.
 */
 
 var Flower = function(name, color) {
-	this.name = "";
-	this.color = ""
+	this.name = name;
+	this.color = color
 }
