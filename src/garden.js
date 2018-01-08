@@ -6,9 +6,6 @@ var garden = {
 		this.flowers.push(flower);
 	},
 	plant: function(bouquet) {
-		console.log(this.flowers);
-		console.log(bouquet);
-		var plants = this.flowers.concat(bouquet);
-		console.log(plants)
+		this.flowers = this.flowers.concat(bouquet);
 	}
 };
