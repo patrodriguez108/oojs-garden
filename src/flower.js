@@ -5,4 +5,7 @@ matching the description in spec/flower_spec.js.
 
 */
 
-var Flower = function() {}
+var Flower = function(name, color) {
+	name: "";
+	color: ""
+}
