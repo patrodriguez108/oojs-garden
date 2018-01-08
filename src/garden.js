@@ -11,5 +11,14 @@ var garden = {
 	remove: function(flower) {
 		var flowerIndex = this.flowers.indexOf(flower);
 		this.flowers.splice(flowerIndex)
+	},
+	flowersByColor(color) {
+		var flowers = [];
+		for (var i = 0; i < this.flowers.length; i++) {
+			if (this.flowers[i].color === color) {
+				flowers.push(this.flowers[i]);
+			};
+		};
+		return flowers
 	}
 };
